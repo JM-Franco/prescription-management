@@ -1,0 +1,3 @@
+# TODO
+Tried to deploy on Railway. Laravel app deployment successful after changing the port in Railway service settings to match deployment port in deployment log. Next, connect local Laravel app to Railway MySQL server. Use local Laravel app to migrate tables to Railway MySQL server. Then configure Railway Laravel app to communicate with Railway MySQL server. Similar process seen in this video: https://www.youtube.com/watch?v=w9Xj2n12pJ0. Issues regarding previous attempts from configuration of local Laravel app about database connections. The .env file needs to be properly configured to connect to Railway MySQL server to migrate data. However, unsure of how to properly setup .env configuration to do so.
+
