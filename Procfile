@@ -1,1 +1,1 @@
-postdeploy: ./deploy.sh
+postdeploy: php artisan key:generate
