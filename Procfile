@@ -1,1 +1,1 @@
-postdeploy: php artisan key:generate
+web: php artisan key:generate
