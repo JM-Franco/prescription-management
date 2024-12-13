@@ -38,11 +38,17 @@ In `.env`:
     DB_USERNAME=root
     DB_PASSWORD=
 
-Copy SQL dump into MySQL docker container using `docker cp DIR_OF_SQL_DUMP MYSQL_DOCKER_CONTAINER_NAME:DIR_IN_MYSQL_CONTAINER`
+Copy SQL dump into MySQL docker container using
 
-Access the docker container of the MySQL database using `docker exec -it MYSQL_DOCKER_CONTAINER_NAME bash`
+    docker cp DIR_OF_SQL_DUMP MYSQL_DOCKER_CONTAINER_NAME:DIR_IN_MYSQL_CONTAINER
 
-Import SQL data using `mysql -hjunction.proxy.rlwy.net -uroot -ppassword_of_railway_mysql_db --port 12345 --protocol=TCP railway`
+Access the docker container of the MySQL database using 
+
+    docker exec -it MYSQL_DOCKER_CONTAINER_NAME bash
+
+Import SQL data using 
+
+    mysql -hjunction.proxy.rlwy.net -uroot -ppassword_of_railway_mysql_db --port 12345 --protocol=TCP railway
 
 Access the docker container of the Laravel webapp and run the following commands:
 
